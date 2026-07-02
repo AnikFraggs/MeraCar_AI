@@ -1,7 +1,7 @@
 """Model configs for Module 2 — CNN Terrain, RF Gear/Sunroof, MLP Suspension."""
 from __future__ import annotations
 import torch.nn as nn
-from ..common.torch_helper import MLPRegressor
+from common.torch_helper import MLPRegressor
 
 # =======================================================
 # 1. CNN for Terrain Classification (Vision Pipeline)
