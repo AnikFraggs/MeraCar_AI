@@ -14,14 +14,14 @@ if SCRIPT_DIR not in sys.path:
 
 # MATCH THESE EXACTLY TO YOUR FOLDER NAMES
 MODULES = {
-    1: ("MeraCar_AI.module1_ai_assisted_driving.train", "Intelligent Adaptive Driving"),
-    2: ("MeraCar_AI.module2_suspension_braking_sunroof.train", "AI Suspension Controller"),
-    3: ("MeraCar_AI.module3_energy_optimization.train", "Hybrid Energy Optimization"),
-    4: ("MeraCar_AI.module4_thermal_settings.train", "Smart Cabin Thermal Management"),
-    5: ("MeraCar_AI.module5_tyre_health_management.train", "Tire Health Monitoring"),
-    6: ("MeraCar_AI.module6_emergency_systems.train", "Emergency AI"),
-    7: ("MeraCar_AI.module7_maintainance.train", "Predictive Maintenance"),
-    8: ("MeraCar_AI.module8_driver_state.train", "Driver Assistance"),
+    1: ("module1_ai_assisted_driving.train", "Intelligent Adaptive Driving"),
+    2: ("module2_suspension_braking_sunroof.train", "AI Suspension Controller"),
+    3: ("module3_energy_optimization.train", "Hybrid Energy Optimization"),
+    4: ("module4_thermal_settings.train", "Smart Cabin Thermal Management"),
+    5: ("module5_tyre_health_management.train", "Tire Health Monitoring"),
+    6: ("module6_emergency_systems.train", "Emergency AI"),
+    7: ("module7_maintainance.train", "Predictive Maintenance"),
+    8: ("module8_driver_state.train", "Driver Assistance"),
 }
 
 def run(selected):
