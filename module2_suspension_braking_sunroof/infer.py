@@ -3,8 +3,8 @@ from __future__ import annotations
 import joblib
 import numpy as np
 import torch
-from ..common.utils import get_device, module_dir, setup_logger
-from ..common.torch_helper import load_checkpoint
+from common.utils import get_device, module_dir, setup_logger
+from common.torch_helper import load_checkpoint
 from . import model as M
 
 logger = setup_logger("Module2_Infer")
