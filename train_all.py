@@ -12,14 +12,14 @@ import traceback
 import importlib
 
 MODULES = {
-    1: ("myCar_AI.module1_ai_assisted_driving.train", "Intelligent Adaptive Driving"),
-    2: ("myCar_AI.module2_suspension_braking_sunroof", "AI Suspension Controller"),
-    3: ("myCar_AI.module3_energy_optimization.train", "Hybrid Energy Optimization"),
-    4: ("myCar_AI.module4_thermal_settings.train", "Smart Cabin Thermal Management"),
-    5: ("myCar_AI.module5_tyre_health_management.train", "Tire Health Monitoring"),
-    6: ("myCar_AI.module6_emergency_systems.train", "Emergency AI"),
-    7: ("myCar_AI.module7_maintainance.train", "Predictive Maintenance"),
-    8: ("myCar_AI.module8_driver_state.train", "Driver Assistance"),
+    1: ("module1_ai_assisted_driving.train", "Intelligent Adaptive Driving"),
+    2: ("module2_suspension_braking_sunroof", "AI Suspension Controller"),
+    3: ("module3_energy_optimization.train", "Hybrid Energy Optimization"),
+    4: ("module4_thermal_settings.train", "Smart Cabin Thermal Management"),
+    5: ("module5_tyre_health_management.train", "Tire Health Monitoring"),
+    6: ("module6_emergency_systems.train", "Emergency AI"),
+    7: ("module7_maintainance.train", "Predictive Maintenance"),
+    8: ("module8_driver_state.train", "Driver Assistance"),
 }
 
 def run(selected):
