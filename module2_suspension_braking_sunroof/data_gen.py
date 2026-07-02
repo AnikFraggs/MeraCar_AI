@@ -2,7 +2,7 @@
 from __future__ import annotations
 import numpy as np
 import pandas as pd
-from ..common.utils import set_seed, module_dir, ensure_dirs, setup_logger
+from common.utils import set_seed, module_dir, ensure_dirs, setup_logger
 from .physics import QuarterCar, optimal_setting, auto_gear_logic
 
 logger = setup_logger("Module2_DataGen")
