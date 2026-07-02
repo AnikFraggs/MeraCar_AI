@@ -2,8 +2,8 @@
 from __future__ import annotations
 import numpy as np
 import pandas as pd
-from ..common.utils import set_seed, module_dir, ensure_dirs, setup_logger
-from ..common.physics_constants import VehicleParams, MU_DRY, MU_WET, MU_SNOW
+from common.utils import set_seed, module_dir, ensure_dirs, setup_logger
+from common.physics_constants import VehicleParams, MU_DRY, MU_WET, MU_SNOW
 from . import physics as ph
 
 logger = setup_logger("Module1_DataGen")
