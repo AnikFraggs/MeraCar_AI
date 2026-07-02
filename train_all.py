@@ -1,18 +1,11 @@
 """Train every module end-to-end."""
 from __future__ import annotations
 import sys
-import os
 import time
 import traceback
 import importlib
 
-# Get the directory of this script and add it to Python Path
-# This fixes the "attempted relative import beyond top-level package" error
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-if SCRIPT_DIR not in sys.path:
-    sys.path.append(SCRIPT_DIR)
-
-# MATCH THESE EXACTLY TO YOUR FOLDER NAMES
+# CHANGE THESE STRINGS TO MATCH YOUR EXACT FOLDER NAMES AND FILE NAMES
 MODULES = {
     1: ("module1_ai_assisted_driving.train", "Intelligent Adaptive Driving"),
     2: ("module2_suspension_braking_sunroof.train", "AI Suspension Controller"),
@@ -32,13 +25,11 @@ def run(selected):
         print("=" * 70)
         t0 = time.time()
         try:
+            # If your files are in the root directory, just use mod_path
+            # If they are in a parent folder, use f"parent_folder.{mod_path}"
             mod = importlib.import_module(mod_path)
-            # Check if main() exists before calling it
-            if hasattr(mod, 'main'):
-                mod.main()
-                print(f"[SUCCESS] Module {num} trained in {time.time() - t0:.1f}s")
-            else:
-                print(f"[ERROR] Module {num} train.py does not have a main() function!")
+            mod.main()
+            print(f"[SUCCESS] Module {num} trained in {time.time() - t0:.1f}s")
         except Exception:
             print(f"[ERROR] Module {num} failed:")
             traceback.print_exc()
