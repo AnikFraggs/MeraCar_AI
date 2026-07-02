@@ -3,7 +3,7 @@ from __future__ import annotations
 import sys
 import time
 import traceback
-import importlib
+#import importlib
 
 # CHANGE THESE STRINGS TO MATCH YOUR EXACT FOLDER NAMES AND FILE NAMES
 MODULES = {
@@ -18,6 +18,7 @@ MODULES = {
 }
 
 def run(selected):
+    import importlib
     for num in selected:
         mod_path, name = MODULES[num]
         print("\n" + "=" * 70)
