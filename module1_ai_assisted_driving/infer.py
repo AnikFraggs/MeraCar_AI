@@ -4,8 +4,8 @@ import joblib
 import numpy as np
 import pandas as pd
 import torch
-from ..common.utils import get_device, module_dir, setup_logger
-from ..common.torch_helper import load_checkpoint
+from common.utils import get_device, module_dir, setup_logger
+from common.torch_helper import load_checkpoint
 from . import model as M
 
 logger = setup_logger("Module1_Infer")
