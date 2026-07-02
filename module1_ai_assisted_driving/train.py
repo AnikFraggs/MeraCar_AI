@@ -4,8 +4,8 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from ..common.utils import set_seed, get_device, module_dir, ensure_dirs, setup_logger
-from ..common.torch_helper import make_loaders, train_regression, save_checkpoint
+from common.utils import set_seed, get_device, module_dir, ensure_dirs, setup_logger
+from common.torch_helper import make_loaders, train_regression, save_checkpoint
 from . import data_gen, model as M
 
 logger = setup_logger("Module1_Train")
