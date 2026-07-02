@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
 from scipy.signal import lsim
-from ..common.physics_constants import (
+from common.physics_constants import (
     TERRAIN_PLAINS, TERRAIN_DESERT, TERRAIN_ROCKY, TERRAIN_EXTREME
 )
 @dataclass
