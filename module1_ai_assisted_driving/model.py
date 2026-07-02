@@ -1,6 +1,6 @@
 """Model definition + config for Module 1."""
 from __future__ import annotations
-from ..common.torch_helper import LSTMRegressor
+from common.torch_helper import LSTMRegressor
 
 FEATURE_COLS = [
     # Front (Exact math distance)
